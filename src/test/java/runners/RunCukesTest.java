@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         dryRun = false,//executes the features and validates whether features exist withot failing
         features = "classpath:features",//location of the features file folder
         glue = {"stepsDefs"}, //location of the step definition classes
-        tags = "@radiosselectionpico  @ChecksRadio",
+        tags = "@radiosselectionpico or  @ChecksRadio",
         plugin = {"pretty", "html:target/cucumber.html", "json:target/cucumber.json"}
 )
 public class RunCukesTest {
